@@ -11,7 +11,7 @@ return {
           border = 1,
         },
 
-        is_hidden_file = function(name, bufnr)
+        is_hidden_file = function(name)
           if vim.startswith(name, "..") then return false end
           return vim.startswith(name, ".")
         end,
@@ -35,10 +35,10 @@ return {
 
   {
     "refractalize/oil-git-status.nvim",
-    ft = "oil",
     dependencies = {
       "stevearc/oil.nvim",
     },
     opts = {},
+    config = true,
   },
 }

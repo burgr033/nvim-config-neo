@@ -17,7 +17,6 @@ return {
         },
         lualine_z = { "tabs" },
       },
-      extensions = { "oil" },
       sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff", "diagnostics" },
@@ -27,6 +26,10 @@ return {
         lualine_z = { "progress" },
       },
       options = {
+        disabled_filetypes = {
+          statusline = { "snacks_dashboard" },
+        },
+        -- always_show_tabline = false,
         section_separators = { left = " ", right = " " },
         component_separators = { left = " ", right = " " },
       },

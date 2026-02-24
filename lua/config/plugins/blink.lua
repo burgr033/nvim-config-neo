@@ -1,12 +1,12 @@
 return {
   "saghen/blink.cmp",
-  event = "VimEnter",
+  event = "InsertEnter",
   version = "1.*",
-  -- TODO: Snippets
-  dependencies = {},
+
+  dependencies = { "rafamadriz/friendly-snippets" },
   opts = {
     keymap = {
-      preset = "default",
+      preset = "enter",
     },
     appearance = {
       nerd_font_variant = "mono",
